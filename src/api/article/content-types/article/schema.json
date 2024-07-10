@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "audit_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::audit-list.audit-list",
+      "mappedBy": "article"
+    }
+  }
+}
